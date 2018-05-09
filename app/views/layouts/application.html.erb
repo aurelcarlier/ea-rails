@@ -3,19 +3,19 @@
   <div class="app">
     <head>
       <title>Erosion-Aventure</title>
-      <h1>Erosion-Aventure, l'aventure sous terre !</h1>
+      <h2>Erosion-Aventure, l'aventure sous terre !</h2>
       <%= csrf_meta_tags %>
       <%= csp_meta_tag %>
 
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-      <%= javascript_pack_tag 'hello_react' %>
       <nav class="menu">
         <ul>
           <li><a href="#Accueil">Accueil</a></li>
           <li><a href="#Apropos">À propos</a></li>
+          <li><a href="#Courses">Courses spéléo</a></li>
           <li><a href="#Contact">Contact</a></li>
+          <li><a href="#Connexion">Connexion</a></li>
         </ul>
       </nav>
     </head>
@@ -23,5 +23,13 @@
     <body>
       <%= yield %>
     </body>
+
+    <footer>
+      <nav class="menu">
+        <ul>
+          <li><a href="#Administration">Administration</a></li>
+        </ul>
+      </nav>
+    </footer>
   </div>
 </html>
