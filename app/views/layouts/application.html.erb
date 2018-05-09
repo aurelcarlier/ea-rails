@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <div class="app">
+    <head>
+      <title>Erosion-Aventure</title>
+      <h1>Erosion-Aventure, l'aventure sous terre !</h1>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+      <%= javascript_pack_tag 'hello_react' %>
+      <nav class="menu">
+        <ul>
+          <li><a href="#Accueil">Accueil</a></li>
+          <li><a href="#Apropos">À propos</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </head>
+
+    <body>
+      <%= yield %>
+    </body>
+  </div>
+</html>
