@@ -16,18 +16,16 @@
 
 @import "global_variables";
 
-.app
-{
-	margin: 15px auto;
-	max-width: 85%;
-	border: 1px solid black;
-
-	section {
-	    background-color: $color-test;
-	    border-radius: 0;
-	    padding: 40px 20px;
-	    margin-top: 30px;
-	}
+.app {
+  margin: 15px auto;
+  max-width: 85%;
+  border: 1px solid black;
+  
+  section {
+    border-radius: 0;
+    padding: 40px 20px;
+    margin-top: 30px;
+  }
 }
 
 nav {

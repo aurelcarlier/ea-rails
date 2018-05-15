@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(
+  firstname: 'yann',
+  lastname: 'baux',
+  email: 'yannbaux@gmail.com',
+  password:'speleo',
+  password_confirmation: 'speleo',
+  role: 'admin'
+)
+puts "db correctly seeded"
