@@ -9,8 +9,24 @@ User.create(
   firstname: 'yann',
   lastname: 'baux',
   email: 'yannbaux@gmail.com',
-  password:'speleo',
+  password: 'speleo',
   password_confirmation: 'speleo',
   role: 'admin'
 )
-puts "db correctly seeded"
+
+Article.create(
+  title: 'Un premier article',
+  text: 'Du texte (1er article).'
+)
+
+Article.create(
+  title: 'Un deuxième article',
+  text: 'Du texte (2eme article).'
+)
+
+Article.create(
+  title: 'Un troisième article',
+  text: 'Du texte (3eme article).'
+)
+
+puts 'db correctly seeded'

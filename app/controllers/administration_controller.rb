@@ -1,9 +1,5 @@
 class AdministrationController < ApplicationController
-
   def home
-    if !@current_user.try(:admin?)
-      return redirect_to "/login"
-    end
+    return redirect_to '/login' unless @current_user.try(:admin?)
   end
-
 end
