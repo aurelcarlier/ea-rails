@@ -9,6 +9,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'components/app';
 
-ReactDOM.render( <App />, document.getElementById('root') );
+var componentRequireContext = require.context("components", true)
+var ReactRailsUJS = require("react_ujs")
+ReactRailsUJS.useContext(componentRequireContext)

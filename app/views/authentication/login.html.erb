@@ -1,0 +1,21 @@
+<div class="loginPage">
+  <section>
+    <% if @current_user %>
+      <p>Bienvenu <%= @current_user.firstname + " " + @current_user.lastname%>. Vous êtes connecté en tant que <%= @current_user.role%>.</p>
+      <%= form_tag "login", method: :delete do %>
+        <input type="submit" value="Déconnexion" />
+      <% end %>
+    <% else %>
+      <p>Vous n'êtes pas connecté. Veuillez vous identifier :</p>
+      <%= form_tag "login", method: :post do %>
+        <p>
+          <%= label_tag "email", "Email : " %>
+          <input type="text" name="email" /><br/>
+          <%= label_tag "password", "Mot de passe : " %>
+          <input type="password" name="password" />
+        </p>
+        <input type="submit" value="Se connecter" />
+      <% end %>
+    <% end %>
+  </section>
+</div>

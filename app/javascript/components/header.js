@@ -6,11 +6,11 @@ class Header extends Component {
       <div className="header">
         <nav>
           <ul>
-            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="/">Accueil</a></li>
             <li><a href="#Apropos">À propos</a></li>
             <li><a href="#Courses">Courses spéléo</a></li>
             <li><a href="#Contact">Contact</a></li>
-            <li><a href="#Connexion">Connexion</a></li>
+            <li><a href="/admin">Administration</a></li>
           </ul>
         </nav>
       </div>
