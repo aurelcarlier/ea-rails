@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'login' => 'authentication#login'
-  post 'login' => 'authentication#check'
+  resources :articles
+  get 'login' => 'authentication#index'
+  post 'login' => 'authentication#login'
   delete 'login' => 'authentication#logout'
   get 'admin' => 'administration#home'
   root 'home#index'
